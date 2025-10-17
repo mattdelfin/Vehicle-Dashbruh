@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a2a6c, #2c3e50);
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.subtitle {
+    color: #bdc3c7;
+    font-size: 16px;
+}
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.card {
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.card-label {
+    font-size: 14px;
+    color: #ecf0f1;
+    margin-bottom: 6px;
+}
+.card-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+}
+.unit {
+    font-size: 14px;
+    color: #95a5a6;
+}
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #3498db;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+button:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+button:active {
+    transform: translateY(0);
+}
+.notifications {
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    min-height: 24px;
+}
+.notification-item {
+    color: #f1c40f;
+    font-size: 14px;
+}

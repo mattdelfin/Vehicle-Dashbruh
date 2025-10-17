@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Delfin BSIT 4B Vehicle Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+        <h1>Vehicle Dashboard</h1>
+        <p class="subtitle">Real-time monitoring and control</p>
+        </header>
+
+        <div class="dashboard-grid">
+        <div class="card">
+            <div class="card-label">Engine</div>
+            <div class="card-value" id="engineStatus">OFF</div>
+        </div>
+        <div class="card">
+            <div class="card-label">Speed</div>
+            <div class="card-value" id="speedDisplay">0</div>
+            <div class="unit">km/h</div>
+        </div>
+        <div class="card">
+            <div class="card-label">Fuel</div>
+            <div class="card-value" id="fuelDisplay">100</div>
+            <div class="unit">%</div>
+        </div>
+        <div class="card">
+            <div class="card-label">Odometer</div>
+            <div class="card-value" id="odometerDisplay">0</div>
+            <div class="unit">km</div>
+        </div>
+        </div>
+
+        <div class="controls">
+        <button id="btnStart">Start Engine</button>
+        <button id="btnStop">Stop Engine</button>
+        <button id="btnAccelerate">Accelerate</button>
+        <button id="btnBrake">Brake</button>
+        <button id="btnRefuel">Refuel</button>
+        </div>
+
+        <div class="notifications">
+        <div class="notification-item" id="notificationArea">Ready</div>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 40px;">
+        <img src="minji-minji-kim.gif" alt="Vroom" style="max-width: 400px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+    </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
